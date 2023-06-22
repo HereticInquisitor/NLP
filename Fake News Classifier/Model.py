@@ -50,14 +50,11 @@ from sklearn.naive_bayes import MultinomialNB
 classifier= MultinomialNB()
 
 
-import matplotlib.pyplot as plt
-
 
 from sklearn import metrics
-import numpy as np
-import itertools
 
 classifier.fit(X_train, y_train)
+
 # Making a Pickle file fo our Model
 import pickle
 pickle.dump(classifier,open("model.pkl","wb"))

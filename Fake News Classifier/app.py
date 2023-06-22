@@ -12,7 +12,7 @@ from flask import Flask, request, jsonify, render_template
 # Making an app
 app= Flask(__name__)
 
-#Loading the Pickle mode
+#Loading the Pickle model
 model= pickle.load(open("model.pkl", "rb"))
 
 @app.route("/")
